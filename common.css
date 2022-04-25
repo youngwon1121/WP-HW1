@@ -135,3 +135,44 @@
 .navvv > li:first-child>a {
     color:#222222;
 }
+
+
+
+.NewEpi > h1{
+    font-size: 32px;
+}
+
+.Lorem > h5{
+    font-size: 15px;
+    color:#777777;
+}
+
+.search_area {
+    height: 60px;
+    width: 570px;
+    transform: translate(83%, 0%);
+}
+
+.search_area > input {
+    font-size: 14px;
+    font-weight: 900;
+    color: #777777;
+    height: 60px;
+    width: 425px;
+    border: 0px;
+    outline: none;
+    float: left;
+    background: #F5F5F5; 
+}
+
+.search_area > button {
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    height: 60px;
+    width: 145px;
+    border: 0px;
+    outline: none;
+    float: right;
+    background: #FF5300; 
+}   
