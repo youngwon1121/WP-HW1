@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+    <style> 
+        body {
+            background: linear-gradient(#FFFFFF, #f2f2f2);
+        }
+
+        .heading1 {
+            font-family: 'Josefin Sans';
+            font-size: 52px;
+            font-weight: 'SemiBold';
+        }
+        .heading2 {
+            font-family: 'Josefin Sans';
+            font-size: 42px;
+        }
+        .heading3 {
+            font-family: 'Josefin Sans';
+            font-size: 32px;
+            font-weight: 400;
+        }
+        .heading4 {
+            font-family: 'Josefin Sans';
+            font-size: 24px;
+            font-weight: 'Regular';
+        }
+        .heading5 {
+            font-family: 'Josefin Sans';
+            font-size: 16px;
+            font-weight: 'Regular';
+        }
+        .heading6 {
+            font-family: 'Josefin Sans';
+            font-size: 15px;
+            font-weight: 'Regular';
+        }
+
+        .heading7 {
+            font-family: 'Josefin Sans';
+            font-size: 14px;
+            font-weight: 'Regular';
+        }
+
+        .orange {
+            color: #FF5300;
+        }
+        .gray {
+            color: #c2c2c2;
+        }
+
+        .primary_button {
+            background-color: #FF5300;
+            color: white;
+            border: none;
+            border-radius: 3px;
+
+            padding: 10px 30px;
+        }
+        .secondary_button {
+            background-color: white;
+            border: 1px solid #FF5300;
+            border-radius: 3px;
+            color: #FF5300;
+            padding: 10px 30px;
+        }
+
+        #podcast_box {
+            background: white;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        #podcast_header {
+            width: 100%;
+            height: 100px;
+        }
+
+        #podcast_end {
+            width: 200px;
+            margin: 0 auto;
+            border-right: 1px solid #c2c2c2;
+            border-left: 1px solid #c2c2c2;
+
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #podcast_header > span {
+            float: left;
+        }
+        #podcast_header > button {
+            float: right;
+        }
+
+        #podcast_episode_list{
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+        }  
+
+        .player_img {
+            width: 30px;
+        }
+
+
+        .podcast_episode {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .podcast_content {
+            padding-right: 50px;
+        }
+
+        .podcast_image {
+            width: 250px;
+        }
+        .podcast_main {
+            flex-basis: 600px;
+            flex-grow: 1;
+            padding: 0px ;
+        }
+
+        .podcast_hashtag::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #f2f2f2;
+        }
+        .podcast_hashtag {
+            height: 100%;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+
+        .hashtag {
+            color: #c2c2c2;
+        }
+
+        #blog_post_box {
+            padding-top: 100px;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #blog_post_list {
+            text-align: left;
+            padding: 50px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .blog_post {
+            background: white;
+            width: 300px;
+            flex-shrink: 0;
+            padding: 30px 0px;
+        }
+
+        .blog_post > div {
+            padding: 0px 30px;
+        }
+        .blog_post_info {
+            border-left: 4px solid #FF5300;
+            border-radius: 2px;
+        }
+
+
+        #instagram_feed_box {
+            width: 1000px;
+            margin: 100px auto 0;
+            text-align: center;
+        }
+
+        #instagram_feed {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            row-gap: 0px;
+            column-gap: 0px;
+        }
+        .is_img>img {
+            width: 100%;
+            height: 100%;
+
+        }
+        .is_img:nth-child(2) {
+            grid-column: 2/3;
+            grid-row: 1/3;   
+        }
+        .is_img:nth-child(2) >img {
+            height: 100%;
+        }
+
+        .is_img:nth-child(7) {
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .is_img:nth-child(7) >img {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="podcast_box">
+        <div id="podcast_header">
+            <span class="heading3">Latest Podcast Episodes</span>
+            <button class="primary_button" >View All</button>
+        </div>
+             
+        <div id="podcast_episode_list">
+            <div class="podcast_episode">
+                <div>
+                    <img class="podcast_image" src="./img/dog.png">
+                </div>
+                <div class="podcast_main">
+                    <p class="heading4">Visiting my best friend's city for first time</p>
+                    <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+
+                    <div class="podcast_player">
+                        <img src="./img/download-arrow.png" class="player_img">
+                        <img src="./img/play-button.png" class="player_img">
+                        <img src="./img/volume.png" class="player_img">
+                    </div>
+                </div>
+                <div class="podcast_hashtag">
+                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Season 1</p>
+                </div>
+            </div>
+            <div class="podcast_episode">
+                <div>
+                    <img class="podcast_image" src="./img/dog.png">
+                </div>
+                <div class="podcast_main">
+                    <p class="heading4">Visiting my best friend's city for first time</p>
+                    <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+
+                    <div class="podcast_player">
+                        <img src="./img/download-arrow.png" class="player_img">
+                        <img src="./img/play-button.png" class="player_img">
+                        <img src="./img/volume.png" class="player_img">
+                    </div>
+                </div>
+                <div class="podcast_hashtag">
+                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Season 1</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="podcast_end">
+            <button class="secondary_button">Show More Episode</button>
+        </div>
+    </div>
+
+    <div id="blog_post_box">
+        <span class="heading3">Blog Posts</span>
+        <div id="blog_post_list">
+            <div class="blog_post">
+                <div class="blog_post_info">
+                    <p>
+                        <span class="orange heading6">By Mehedi Hasan</span>
+                        <span class="gray heading6">Sep 11, 2020</span>
+                    </p>
+                    <p class="heading7 gray">Cantonese Radio</p>
+                </div>
+                <div>
+                    <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
+                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                </div>
+                <div>
+                    <button class="secondary_button">Read More</button>
+                </div>
+            </div>
+            <div class="blog_post">
+                <div class="blog_post_info">
+                    <p>
+                        <span class="orange heading6">By Mehedi Hasan</span>
+                        <span class="gray heading6">Sep 11, 2020</span>
+                    </p>
+                    <p class="heading7 gray">Cantonese Radio</p>
+                </div>
+                <div>
+                    <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
+                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                </div>
+                <div>
+                    <button class="secondary_button">Read More</button>
+                </div>
+            </div>
+            <div class="blog_post">
+                <div class="blog_post_info">
+                    <p>
+                        <span class="orange heading6">By Mehedi Hasan</span>
+                        <span class="gray heading6">Sep 11, 2020</span>
+                    </p>
+                    <p class="heading7 gray">Cantonese Radio</p>
+                </div>
+                <div>
+                    <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
+                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                </div>
+                <div>
+                    <button class="secondary_button">Read More</button>
+                </div>
+            </div>
+        </div>
+            <i class="fa-solid fa-arrow-left fa-2x"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-arrow-right fa-2x" aria-hidden="true"></i>
+            
+            
+    </div>
+
+    <div id="instagram_feed_box">
+        <span class="heading3">Instagram Feeds</span>
+        <div id="instagram_feed">
+            <div class="is_img">
+                <img src="./img/1.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/22.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/2.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/3.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/4.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/5.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/22.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/7.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/8.png">
+            </div>
+            <div class="is_img">
+                <img src="./img/1.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
