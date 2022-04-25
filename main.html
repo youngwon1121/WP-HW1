@@ -8,213 +8,65 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-
-    <style> 
-        body {
-            background: linear-gradient(#FFFFFF, #f2f2f2);
-        }
-
-        .heading1 {
-            font-family: 'Josefin Sans';
-            font-size: 52px;
-            font-weight: 'SemiBold';
-        }
-        .heading2 {
-            font-family: 'Josefin Sans';
-            font-size: 42px;
-        }
-        .heading3 {
-            font-family: 'Josefin Sans';
-            font-size: 32px;
-            font-weight: 400;
-        }
-        .heading4 {
-            font-family: 'Josefin Sans';
-            font-size: 24px;
-            font-weight: 'Regular';
-        }
-        .heading5 {
-            font-family: 'Josefin Sans';
-            font-size: 16px;
-            font-weight: 'Regular';
-        }
-        .heading6 {
-            font-family: 'Josefin Sans';
-            font-size: 15px;
-            font-weight: 'Regular';
-        }
-
-        .heading7 {
-            font-family: 'Josefin Sans';
-            font-size: 14px;
-            font-weight: 'Regular';
-        }
-
-        .orange {
-            color: #FF5300;
-        }
-        .gray {
-            color: #c2c2c2;
-        }
-
-        .primary_button {
-            background-color: #FF5300;
-            color: white;
-            border: none;
-            border-radius: 3px;
-
-            padding: 10px 30px;
-        }
-        .secondary_button {
-            background-color: white;
-            border: 1px solid #FF5300;
-            border-radius: 3px;
-            color: #FF5300;
-            padding: 10px 30px;
-        }
-
-        #podcast_box {
-            background: white;
-            width: 1000px;
-            margin: 0 auto;
-            padding: 30px 0;
-        }
-
-        #podcast_header {
-            width: 100%;
-            height: 100px;
-        }
-
-        #podcast_end {
-            width: 200px;
-            margin: 0 auto;
-            border-right: 1px solid #c2c2c2;
-            border-left: 1px solid #c2c2c2;
-
-            display: flex;
-            justify-content: center;
-            
-        }
-
-        #podcast_header > span {
-            float: left;
-        }
-        #podcast_header > button {
-            float: right;
-        }
-
-        #podcast_episode_list{
-            padding: 0px 20px;
-            display: flex;
-            flex-direction: column;
-        }  
-
-        .player_img {
-            width: 30px;
-        }
-
-
-        .podcast_episode {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .podcast_content {
-            padding-right: 50px;
-        }
-
-        .podcast_image {
-            width: 250px;
-        }
-        .podcast_main {
-            flex-basis: 600px;
-            flex-grow: 1;
-            padding: 0px ;
-        }
-
-        .podcast_hashtag::before {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 100%;
-            background-color: #f2f2f2;
-        }
-        .podcast_hashtag {
-            height: 100%;
-            flex-basis: 100px;
-            flex-grow: 1;
-        }
-
-        .hashtag {
-            color: #c2c2c2;
-        }
-
-        #blog_post_box {
-            padding-top: 100px;
-            width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        #blog_post_list {
-            text-align: left;
-            padding: 50px 0px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .blog_post {
-            background: white;
-            width: 300px;
-            flex-shrink: 0;
-            padding: 30px 0px;
-        }
-
-        .blog_post > div {
-            padding: 0px 30px;
-        }
-        .blog_post_info {
-            border-left: 4px solid #FF5300;
-            border-radius: 2px;
-        }
-
-
-        #instagram_feed_box {
-            width: 1000px;
-            margin: 100px auto 0;
-            text-align: center;
-        }
-
-        #instagram_feed {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: minmax(100px, auto);
-            row-gap: 0px;
-            column-gap: 0px;
-        }
-        .is_img>img {
-            width: 100%;
-            height: 100%;
-
-        }
-        .is_img:nth-child(2) {
-            grid-column: 2/3;
-            grid-row: 1/3;   
-        }
-        .is_img:nth-child(2) >img {
-            height: 100%;
-        }
-
-        .is_img:nth-child(7) {
-            grid-column: 4/5;
-            grid-row: 2/4;
-        }
-        .is_img:nth-child(7) >img {
-            height: 100%;
-        }
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
     </style>
 </head>
 <body>
+    <div class="intro_bg">
+        <div class="header">
+            <div class="logo">
+                <img src="images/Gocast.svg" width="184.97px" height="38.3px">
+            </div>
+
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episode</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="two_buttons">
+                <img src="images/Subscribe.svg" width="130px" height="42px">
+                <img src="images/Donate.svg" style="width:130px; height:42px; margin-left:30px">
+            </div>
+        </div>
+        
+        <div class="middle">
+            <div class="Trending_Episode">
+                <img src="images/Trending Episode.svg" width="140.5px" height="15px">
+            </div>
+
+            <div class="intro_text">
+                <h1>Dreams of an unique ideas <br>
+                    scattered through a deserted.
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <br>
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </h4>
+            </div>
+
+            <div class="music">
+                <img src="images/music.svg" width="547.11px" height="50px">
+            </div>
+            <div class="listen_on_also">
+                <img src="images/Listen On Also.svg" width="124.79px" height="15px">
+            </div>
+
+            <div class="Listen">
+                <img src="images/Spotify.svg" width="130px" height="50px">
+                <img src="images/Google Potcast.svg" style="width:208px; height:50px; margin-left:20px">
+                <img src="images/Apple Potcast.svg" style="width:208px; height:50px; margin-left:20px">
+            </div>
+        </div>
+        <!-- <div class="Man">
+            <img src="images/Man.svg" width="599px" height="760px">
+        </div> -->
+    </div>
+
     <div id="podcast_box">
         <div id="podcast_header">
             <span class="heading3">Latest Podcast Episodes</span>
@@ -224,45 +76,58 @@
         <div id="podcast_episode_list">
             <div class="podcast_episode">
                 <div>
-                    <img class="podcast_image" src="./img/dog.png">
+                    <img class="podcast_image" src="./images/podcast1.png">
                 </div>
                 <div class="podcast_main">
-                    <p class="heading4">Visiting my best friend's city for first time</p>
-                    <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
-
-                    <div class="podcast_player">
-                        <img src="./img/download-arrow.png" class="player_img">
-                        <img src="./img/play-button.png" class="player_img">
-                        <img src="./img/volume.png" class="player_img">
+                    <div class="podcast_info">
+                        <p class="podcast_title heading4">Visiting my best friend's city for first time</p>
+                        <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+                    </div>
+                    <div class="music">
+                        <img src="images/music.svg" width="500px" height="50px">
                     </div>
                 </div>
                 <div class="podcast_hashtag">
                     <p class="hashtag"># Season 1</p>
-                    <p class="hashtag"># Season 1</p>
-                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Posted on Sep 3, 2020</p>
+                    <p class="hashtag"># audio / goodbyes / life</p>
+                    
                 </div>
             </div>
             <div class="podcast_episode">
                 <div>
-                    <img class="podcast_image" src="./img/dog.png">
+                    <img class="podcast_image" src="./images/podcast2.png">
                 </div>
                 <div class="podcast_main">
-                    <p class="heading4">Visiting my best friend's city for first time</p>
+                    <p class="heading4">An interesting read I definitely recommend</p>
                     <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
-
-                    <div class="podcast_player">
-                        <img src="./img/download-arrow.png" class="player_img">
-                        <img src="./img/play-button.png" class="player_img">
-                        <img src="./img/volume.png" class="player_img">
+                    <div class="music">
+                        <img src="images/music.svg" width="500px" height="50px">
                     </div>
                 </div>
                 <div class="podcast_hashtag">
                     <p class="hashtag"># Season 1</p>
-                    <p class="hashtag"># Season 1</p>
-                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Posted on July 29, 20200</p>
+                    <p class="hashtag"># goodbyes / life</p>
                 </div>
             </div>
-
+            <div class="podcast_episode">
+                <div>
+                    <img class="podcast_image" src="./images/podcast3.png">
+                </div>
+                <div class="podcast_main">
+                    <p class="heading4">What if all my adventures go back home?</p>
+                    <p class="podcast_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam , sed diam voluptua.</p>
+                    <div class="music">
+                        <img src="images/music.svg" width="500px" height="50px">
+                    </div>
+                </div>
+                <div class="podcast_hashtag">
+                    <p class="hashtag"># Season 1</p>
+                    <p class="hashtag"># Posted on Sep 11, 2020</p>
+                    <p class="hashtag"># audio / goodbyes</p>
+                </div>
+            </div>
         </div>
 
         <div id="podcast_end">
@@ -276,14 +141,14 @@
             <div class="blog_post">
                 <div class="blog_post_info">
                     <p>
-                        <span class="orange heading6">By Mehedi Hasan</span>
-                        <span class="gray heading6">Sep 11, 2020</span>
+                        <span class="orange heading6 author">By Mehedi Hasan</span>
+                        <span class="gray heading6 date">Sep 11, 2020</span>
                     </p>
                     <p class="heading7 gray">Cantonese Radio</p>
                 </div>
-                <div>
+                <div class="blog_post_content">
                     <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
-                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                    <p class="heading6 black_three">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
                 </div>
                 <div>
                     <button class="secondary_button">Read More</button>
@@ -292,14 +157,14 @@
             <div class="blog_post">
                 <div class="blog_post_info">
                     <p>
-                        <span class="orange heading6">By Mehedi Hasan</span>
-                        <span class="gray heading6">Sep 11, 2020</span>
+                        <span class="orange heading6 author">By Mehedi Hasan</span>
+                        <span class="gray heading6 date">Sep 11, 2020</span>
                     </p>
                     <p class="heading7 gray">Cantonese Radio</p>
                 </div>
-                <div>
-                    <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
-                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                <div class="blog_post_content">
+                    <p class="heading4">News hour - World Health Organization says a new coronavirus cases slowed</p>
+                    <p class="heading6 black_three">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
                 </div>
                 <div>
                     <button class="secondary_button">Read More</button>
@@ -308,14 +173,14 @@
             <div class="blog_post">
                 <div class="blog_post_info">
                     <p>
-                        <span class="orange heading6">By Mehedi Hasan</span>
-                        <span class="gray heading6">Sep 11, 2020</span>
+                        <span class="orange heading6 author">By Mehedi Hasan</span>
+                        <span class="gray heading6 date">Sep 11, 2020</span>
                     </p>
                     <p class="heading7 gray">Cantonese Radio</p>
                 </div>
-                <div>
-                    <p class="heading4">Global News Podcast Thai soldier kills many people a shooting rampage</p>
-                    <p class="heading6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
+                <div class="blog_post_content">
+                    <p class="heading4">Over to You - Programme face the axe substantial financial cutbacks</p>
+                    <p class="heading6 black_three">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ………..</p>
                 </div>
                 <div>
                     <button class="secondary_button">Read More</button>
@@ -324,44 +189,84 @@
         </div>
             <i class="fa-solid fa-arrow-left fa-2x"></i>&nbsp;&nbsp;&nbsp;
             <i class="fa-solid fa-arrow-right fa-2x" aria-hidden="true"></i>
-            
-            
     </div>
 
     <div id="instagram_feed_box">
         <span class="heading3">Instagram Feeds</span>
         <div id="instagram_feed">
             <div class="is_img">
-                <img src="./img/1.png">
+                <img src="./images/1.png">
             </div>
             <div class="is_img">
-                <img src="./img/22.png">
+                <img src="./images/22.png">
             </div>
             <div class="is_img">
-                <img src="./img/2.png">
+                <img src="./images/2.png">
             </div>
             <div class="is_img">
-                <img src="./img/3.png">
+                <img src="./images/3.png">
             </div>
             <div class="is_img">
-                <img src="./img/4.png">
+                <img src="./images/4.png">
             </div>
             <div class="is_img">
-                <img src="./img/5.png">
+                <img src="./images/5.png">
             </div>
             <div class="is_img">
-                <img src="./img/22.png">
+                <img src="./images/22.png">
             </div>
             <div class="is_img">
-                <img src="./img/7.png">
+                <img src="./images/7.png">
             </div>
             <div class="is_img">
-                <img src="./img/8.png">
+                <img src="./images/8.png">
             </div>
             <div class="is_img">
-                <img src="./img/1.png">
+                <img src="./images/1.png">
             </div>
         </div>
+    </div>
+
+
+    <div class="btm">
+        <div class="first"> 
+            <img src="images/Gocast.svg" style="width:184.97px; height:38.3px; margin-bottom:24px">
+            <div class txt style='line-height:100%'>
+                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing <br>
+                    elitr, sed diam nonumy eirmod tempor invidunt.</h5>
+                <h6>
+                    Socials
+                </h6>
+                <div class="socials">
+                    <img src="images/socials.svg" style="width:262px; height:45px; margin-top:20px">
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <ul class="navv">
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episode</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="third">
+            <ul class="navvv">
+                <li><a href="#">Recent Episodes</a></li>
+                <li><a href="#">Episodes 1</a></li>
+                <li><a href="#">Episodes 2</a></li>
+                <li><a href="#">Episodes 3</a></li>
+                <li><a href="#">Episodes 4</a></li>
+            </ul>
+        </div>
+        <div class="fourth">
+            <h3>Listen My Podcasts Also In</h3>
+            <img src="images/Google Potcast.svg" style="width:179px; height:43px; margin-top:30px"><br>
+            <img src="images/Apple Potcast.svg" style="width:208px; height:50px; margin-top:15px"><br>
+            <img src="images/Spotify.svg" style="width:112px; height:43px; margin-top:15px">
+        </div>
+
     </div>
 </body>
 </html>

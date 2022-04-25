@@ -1,0 +1,137 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro_bg{
+    background:#F5F5F5;
+    width: 100%;
+    height: 828px;
+}
+
+.header {
+    margin: 0 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top:43px;
+}
+
+.nav {
+    display:flex;
+}
+
+.nav > li {
+    list-style-type: none;
+    margin-top:55px;
+    margin-left: 2rem;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav > li:first-child>a {
+    border-bottom: 1px solid #FF5300;
+    color:#FF5300;
+}
+
+.two_buttons{
+    margin-top:41px;
+    justify-content: space-between;
+}
+
+.middle {
+    margin-left: 215px;
+}
+
+.Trending_Episode {
+    margin-top: 138px;
+}
+
+.intro_text > h1{
+    font-weight:bolder;
+    margin-top: 20px;
+    font-size: 52px;
+}
+
+.intro_text > h4{
+    margin-top: 25px;
+    font-size: 16px;
+    color: #555555;
+} 
+
+.music {
+    margin-top: 35px;
+}
+
+.listen_on_also {
+    margin-top: 50px;
+}
+
+.Listen {
+    margin-top: 25px;
+}
+
+.btm {
+    margin: 85px 272px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btm > h5 {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #777777;
+}
+
+.btm > h6 {
+    font-size: 16px;
+}
+
+.btm > h3 {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.navv > li {
+    list-style-type: none;
+}
+
+.navv > li > a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 900;
+    line-height:300%
+}
+
+.navv > li:first-child>a {
+    color:#222222;
+}
+
+.navvv > li {
+    list-style-type: none;
+    line-height:15px;
+}
+
+.navvv > li > a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top:15px;
+    line-height:300%
+}
+
+.navvv > li:first-child>a {
+    color:#222222;
+}
